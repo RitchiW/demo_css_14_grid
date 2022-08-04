@@ -1,37 +1,33 @@
 /* Typography
    ========================================================================== */
 @font-face {
-    font-family: "Roboto";
-    src: url("/src/Assets/Fonts/roboto-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: block;
+  font-family: "Roboto";
+  src: url("/src/Assets/Fonts/roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
 }
-
 @font-face {
-    font-family: "Roboto";
-    src: url("/src/Assets/Fonts/roboto-Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-    font-display: block;
+  font-family: "Roboto";
+  src: url("/src/Assets/Fonts/roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
 }
-
 @font-face {
-    font-family: "RobotoMono";
-    src: url("/src/Assets/Fonts/robotoMono-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: block;
+  font-family: "RobotoMono";
+  src: url("/src/Assets/Fonts/robotoMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
 }
-
 @font-face {
-    font-family: "RobotoMono";
-    src: url("/src/Assets/Fonts/robotoMono-Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-    font-display: block;
+  font-family: "RobotoMono";
+  src: url("/src/Assets/Fonts/robotoMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
 }
-
 /* Breakpoints
    ========================================================================== */
 /* Layout
@@ -68,7 +64,7 @@
  * Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-    -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 /* Sections
@@ -77,7 +73,7 @@ html {
  * Render the `main` element consistently in IE.
  */
 main {
-    display: block;
+  display: block;
 }
 
 /* Grouping content
@@ -86,8 +82,8 @@ main {
  * Show the overflow in Edge and IE.
  */
 hr {
-    height: 0;
-    overflow: visible;
+  height: 0;
+  overflow: visible;
 }
 
 /* Text-level semantics
@@ -96,7 +92,7 @@ hr {
  * Remove the gray background on active links in IE 10.
  */
 a {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 /**
@@ -104,8 +100,8 @@ a {
  * Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-    border-bottom: none;
-    text-decoration: underline dotted;
+  border-bottom: none;
+  text-decoration: underline dotted;
 }
 
 /**
@@ -114,17 +110,17 @@ abbr[title] {
  */
 sub,
 sup {
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
 
 sub {
-    bottom: -0.25rem;
+  bottom: -0.25rem;
 }
 
 sup {
-    top: -0.5rem;
+  top: -0.5rem;
 }
 
 /* Embedded content
@@ -133,7 +129,7 @@ sup {
  * Remove the border on images inside links in IE 10.
  */
 img {
-    border: none;
+  border: none;
 }
 
 /* Forms
@@ -144,7 +140,7 @@ img {
  */
 button,
 input {
-    overflow: visible;
+  overflow: visible;
 }
 
 /**
@@ -153,7 +149,7 @@ input {
  */
 button,
 select {
-    text-transform: none;
+  text-transform: none;
 }
 
 /**
@@ -163,7 +159,7 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-    -webkit-appearance: button;
+  -webkit-appearance: button;
 }
 
 /**
@@ -173,8 +169,8 @@ button::-moz-focus-inner,
 [type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
 [type=submit]::-moz-focus-inner {
-    border: none;
-    padding: 0;
+  border: none;
+  padding: 0;
 }
 
 /**
@@ -184,7 +180,7 @@ button:-moz-focusring,
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
 [type=submit]:-moz-focusring {
-    outline: none;
+  outline: none;
 }
 
 /**
@@ -192,24 +188,24 @@ button:-moz-focusring,
  * Correct the color inheritance from `fieldset` elements in IE.
  */
 legend {
-    color: inherit;
-    display: table;
-    max-width: 100%;
-    white-space: normal;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
 }
 
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
-    vertical-align: baseline;
+  vertical-align: baseline;
 }
 
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
 textarea {
-    overflow: auto;
+  overflow: auto;
 }
 
 /**
@@ -218,8 +214,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-    box-sizing: border-box;
-    padding: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 /**
@@ -227,7 +223,7 @@ textarea {
  */
 [type=number]::-webkit-inner-spin-button,
 [type=number]::-webkit-outer-spin-button {
-    height: auto;
+  height: auto;
 }
 
 /**
@@ -235,22 +231,22 @@ textarea {
  * Correct the outline style in Safari.
  */
 [type=search] {
-    -webkit-appearance: textfield;
-    outline: none;
+  -webkit-appearance: textfield;
+  outline: none;
 }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
 [type=search]::-webkit-search-decoration {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
 ::-webkit-file-upload-button {
-    -webkit-appearance: button;
+  -webkit-appearance: button;
 }
 
 /* Interactive
@@ -259,14 +255,14 @@ textarea {
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
 details {
-    display: block;
+  display: block;
 }
 
 /*
  * Add the correct display in all browsers.
  */
 summary {
-    display: list-item;
+  display: list-item;
 }
 
 /* Misc
@@ -275,14 +271,14 @@ summary {
  * Add the correct display in IE 10+.
  */
 template {
-    display: none;
+  display: none;
 }
 
 /**
  * Add the correct display in IE 10.
  */
 [hidden] {
-    display: none;
+  display: none;
 }
 
 /* Document
@@ -290,105 +286,105 @@ template {
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    background: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: none;
 }
 
 /* Text-level semantics
    ========================================================================== */
 a {
-    display: inline-block;
-    text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 /* Forms
    ========================================================================== */
 button:focus {
-    outline: none;
+  outline: none;
 }
 
 /* Document
    ========================================================================== */
 * {
-    font-size: 1rem;
-    line-height: 1.25rem;
-    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Headings
    ========================================================================== */
 h1 {
-    font-size: 2.5rem;
-    line-height: 2.75rem;
+  font-size: 2.5rem;
+  line-height: 2.75rem;
 }
 
 h2 {
-    font-size: 2rem;
-    line-height: 2.25rem;
+  font-size: 2rem;
+  line-height: 2.25rem;
 }
 
 h3 {
-    font-size: 1.75rem;
-    line-height: 2rem;
+  font-size: 1.75rem;
+  line-height: 2rem;
 }
 
 h4 {
-    font-size: 1.15rem;
-    line-height: 1.4rem;
+  font-size: 1.15rem;
+  line-height: 1.4rem;
 }
 
 h5 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }
 
 h6 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
 }
 
 /* Grouping content
    ========================================================================== */
 pre {
-    font-family: "RobotoMono", Menlo, Monaco, "Courier New", monospace;
+  font-family: "RobotoMono", Menlo, Monaco, "Courier New", monospace;
 }
 
 /* Text-level semantics
    ========================================================================== */
 b,
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 code,
 kbd,
 samp {
-    font-family: "RobotoMono", Menlo, Monaco, "Courier New", monospace;
+  font-family: "RobotoMono", Menlo, Monaco, "Courier New", monospace;
 }
 
 small {
-    font-size: 0.5rem;
-    line-height: 0.75rem;
+  font-size: 0.5rem;
+  line-height: 0.75rem;
 }
 
 sup,
 sub {
-    font-size: 0.75rem;
+  font-size: 0.75rem;
 }
 
 /* Forms
    ========================================================================== */
 ::-webkit-file-upload-button {
-    font-size: 1rem;
-    line-height: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
 }
 
 /* Colors
@@ -402,8 +398,8 @@ sub {
  * Set the grid-template-areas to create the page layout
  */
 .lyt-base-container, .body {
-    display: grid;
-    grid-template-areas: "header" "main" "footer";
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
 }
 
 /**
@@ -430,15 +426,159 @@ sub {
  *
  * @param   $width  the element row occupation, default value '1'
  */
+.header {
+  display: grid;
+  grid-template-columns: [container-start content-start] 1fr [content-end container-end];
+  grid-area: header;
+  background: #55bdca;
+}
+@media (min-width: 48rem) {
+  .header {
+    grid-template-columns: [container-start pad-1-start] 1fr [pad-1-end content-start] minmax(48rem, 67rem) [content-end pad-2-start] 1fr [pad-2-end container-end];
+  }
+}
+
+.header__content-container {
+  padding: 1rem;
+  display: grid;
+  grid-column: content-start/content-end;
+  grid-template-columns: [content-start] repeat(12, [col-start] 1fr [col-end]) [content-end];
+  grid-column-gap: 1rem;
+}
+@media (min-width: 48rem) {
+  .header__content-container {
+    padding: 1.5rem;
+    grid-column-gap: 1.5rem;
+  }
+}
+
+.header__content-wrapper {
+  grid-column-end: span 12;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+@media (min-width: 48rem) {
+  .header__content-wrapper {
+    gap: 0;
+  }
+}
+
+.header__title {
+  color: #fff;
+}
+@media (min-width: 48rem) {
+  .header__title {
+    font-size: 5rem;
+    line-height: 5.25rem;
+  }
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: [container-start content-start] 1fr [content-end container-end];
+  grid-area: navbar;
+}
+@media (min-width: 48rem) {
+  .navbar {
+    grid-template-columns: [container-start pad-1-start] 1fr [pad-1-end content-start] minmax(48rem, 67rem) [content-end pad-2-start] 1fr [pad-2-end container-end];
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: [container-start content-start] 1fr [content-end container-end];
+  grid-area: main;
+}
+@media (min-width: 48rem) {
+  .main {
+    grid-template-columns: [container-start pad-1-start] 1fr [pad-1-end content-start] minmax(48rem, 67rem) [content-end pad-2-start] 1fr [pad-2-end container-end];
+  }
+}
+
+.main__content-container {
+  padding: 1rem;
+  display: grid;
+  grid-column: content-start/content-end;
+  grid-template-columns: [content-start] repeat(12, [col-start] 1fr [col-end]) [content-end];
+  grid-column-gap: 1rem;
+}
+@media (min-width: 48rem) {
+  .main__content-container {
+    padding: 1.5rem;
+    grid-column-gap: 1.5rem;
+  }
+}
+
+.main__content-wrapper {
+  grid-column-end: span 12;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: space-around;
+  gap: 1rem;
+}
+@media (min-width: 48rem) {
+  .main__content-wrapper {
+    gap: 1.5rem;
+  }
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: [container-start content-start] 1fr [content-end container-end];
+  grid-area: footer;
+  background: #022449;
+}
+@media (min-width: 48rem) {
+  .footer {
+    grid-template-columns: [container-start pad-1-start] 1fr [pad-1-end content-start] minmax(48rem, 67rem) [content-end pad-2-start] 1fr [pad-2-end container-end];
+  }
+}
+
+.footer__content-container {
+  padding: 1rem;
+  display: grid;
+  grid-column: content-start/content-end;
+  grid-template-columns: [content-start] repeat(12, [col-start] 1fr [col-end]) [content-end];
+  grid-column-gap: 1rem;
+}
+@media (min-width: 48rem) {
+  .footer__content-container {
+    padding: 1.5rem;
+    grid-column-gap: 1.5rem;
+  }
+}
+
+.footer__content-wrapper {
+  grid-column-end: span 12;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-around;
+  gap: 0;
+}
+@media (min-width: 48rem) {
+  .footer__content-wrapper {
+    gap: 0;
+  }
+}
+
+.footer__copyrights {
+  color: #fff;
+}
+
 .backdrop {
-    width: 100vw;
-    height: 100vh;
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 /**
@@ -462,5 +602,95 @@ sub {
  * @param   $spacing-y    the padding of button on y axis, default value 'map-get($spacing, 6)'
  * @param   $spacing-x    the padding of button on x axis, default value 'map-get($spacing, 5)'
  */
+.mobile-toggle-btn {
+  border-radius: 16px;
+  background: #022449;
+  color: #96ffff;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: space-around;
+  gap: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+}
+.mobile-toggle-btn:active, .mobile-toggle-btn:hover {
+  background: rgba(2, 36, 73, 0.8);
+}
+@media (min-width: 48rem) {
+  .mobile-toggle-btn {
+    gap: 0;
+  }
+}
+@media (min-width: 48rem) {
+  .mobile-toggle-btn {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+@media (min-width: 120rem) {
+  .mobile-toggle-btn {
+    display: none;
+  }
+}
+
+.mobile-toggle-btn__bar {
+  height: 0.25rem;
+  border-radius: 16px;
+  background: white;
+}
+@media (min-width: 48rem) {
+  .mobile-toggle-btn__bar {
+    height: 0.32rem;
+  }
+}
+
+/**
+ * Create the card
+ *
+ * @param   $bg-color   the background color, default value 'transparent'
+ * @param   $shadow     the box-shadow, default value 'none'
+ */
+.example {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 16px;
+  background: #c8eff9;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+}
+@media (min-width: 48rem) {
+  .example {
+    gap: 1.5rem;
+  }
+}
+@media (min-width: 48rem) {
+  .example {
+    padding: 1.5rem;
+  }
+}
+
+.example__title {
+  color: #022449;
+}
+
+.example__container {
+  padding: 1rem;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+  width: 100%;
+}
+@media (min-width: 48rem) {
+  .example__container {
+    padding: 1.5rem;
+  }
+} /* Demo
+   ========================================================================== */
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,18 @@
+@use '../../Assets/Styles/Abstracts/variables' as *;
+@use '../../Assets/Styles/Abstracts/mixins' as *;
+@use '../../Assets/Styles/Base/colors' as *;
+@use '../../Components/UI/Card/card' as *;
+
+.example {
+  @include align-content($direction: column, $align: center, $gap: $spacing-base);
+  @include card(info, $shadow-base);
+}
+
+.example__title {
+  color: map-get($text-clrs, secondary);
+}
+
+.example__container {
+  @include card(map-get($bg-clrs, white), $shadow-base);
+  width: 100%;
+}

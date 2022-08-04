@@ -46,6 +46,7 @@ $bg-clrs: (
         success : #7AFC46,
         warning : #fcee46,
         danger : #fc6b46,
+        white : map-get($grays, white),
         light : map-get($grays, 200), // change
         dark : map-get($grays, 800) // change
 );

@@ -6,6 +6,15 @@
 
 @use '../../Layout/Grid/grid' as *;
 @use '../../Layout/Body/body' as *;
+@use '../../Layout/Header/header' as *;
+@use '../../Layout/Navbar/navbar' as *;
+@use '../../Layout/Main/main' as *;
+@use '../../Layout/Footer/footer' as *;
 
 @use '../../Components/UI/Backdrop/backdrop' as *;
 @use '../../Components/UI/Button/button' as *;
+@use '../../Components/MobileToggleBtn/mobileToggleBtn' as *;
+@use '../../Components/Example/example' as *;
+
+/* Demo
+   ========================================================================== */
