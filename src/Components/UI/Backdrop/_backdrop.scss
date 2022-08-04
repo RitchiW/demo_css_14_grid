@@ -1,0 +1,13 @@
+@use '../../../Assets/Styles/Abstracts/variables' as *;
+@use '../../../Assets/Styles/Base/colors' as *;
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: map-get($z-index, dropdown);
+  background: rgba(map-get($grays, black), $backdrop-alpha-base);
+}

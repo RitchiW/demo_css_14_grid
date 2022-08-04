@@ -1,0 +1,5 @@
+@use '../Grid/grid' as *;
+
+.body {
+  @extend .lyt-base-container;
+}

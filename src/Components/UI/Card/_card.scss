@@ -1,0 +1,20 @@
+@use '../../../Assets/Styles/Abstracts/variables' as *;
+@use '../../../Assets/Styles/Abstracts/mixins' as *;
+@use '../../../Assets/Styles/Base/colors' as *;
+
+/**
+ * Create the card
+ *
+ * @param   $bg-color   the background color, default value 'transparent'
+ * @param   $shadow     the box-shadow, default value 'none'
+ */
+@mixin card($bg-color: transparent, $bow-shadow: none) {
+  padding: $spacing-base;
+  border-radius: $border-radius-base;
+  background: map-get($bg-clrs, $bg-color);
+  box-shadow: $bow-shadow;
+
+  @media (min-width: map-get($breakpoints, md)) {
+    padding: $spacing-md;
+  }
+}

@@ -1,0 +1,45 @@
+@use '../../../Assets/Styles/Abstracts/variables' as *;
+@use '../../../Assets/Styles/Base/colors' as *;
+
+/**
+ * Create the button
+ *
+ * @param   $bg-color     the background color
+ * @param   $text-color   the text color
+ */
+@mixin _btn($bg-color, $text-color) {
+  border-radius: $border-radius-base;
+  background: map-get($bg-clrs, $bg-color);
+  color: map-get($text-clrs, $text-color);
+  cursor: pointer;
+
+  &:active,
+  &:hover {
+    background: rgba(map-get($bg-clrs, $bg-color), $btn-hover-alpha-base);
+  }
+}
+
+/**
+ * Create the squared padded button
+ *
+ * @param   $bg-color     the background color, default value 'primary'
+ * @param   $text-color   the text color, default value 'primary'
+ * @param   $spacing      the padding of button, default value 'map-get($spacing, 5)'
+ */
+@mixin btn-square($bg-color: primary, $text-color: primary, $spacing: map-get($spacing, 5)) {
+  @include _btn($bg-color, $text-color);
+  padding: $spacing;
+}
+
+/**
+ * Create the x:y padded button
+ *
+ * @param   $bg-color     the background color, default value 'primary'
+ * @param   $text-color   the text color, default value 'primary'
+ * @param   $spacing-y    the padding of button on y axis, default value 'map-get($spacing, 6)'
+ * @param   $spacing-x    the padding of button on x axis, default value 'map-get($spacing, 5)'
+ */
+@mixin btn($bg-color: primary, $text-color: primary, $spacing-y: map-get($spacing, 6), $spacing-x: map-get($spacing, 5)) {
+  @include _btn($bg-color, $text-color);
+  padding: $spacing-y $spacing-x;
+}

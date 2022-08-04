@@ -1,0 +1,93 @@
+@use '../../Assets/Styles/Abstracts/variables' as *;
+
+/* Global
+   ========================================================================== */
+
+/**
+ * Page layout container
+ *
+ * Use to the body or the page container
+ * Set the grid-template-areas to create the page layout
+ */
+.lyt-base-container {
+  display: grid;
+  grid-template-areas:  "header"
+                        "main"
+                        "footer";
+}
+
+/**
+ * Layout container
+ *
+ * Use to the document layout container (header, navbar, main, etc.)
+ */
+@mixin lyt-container {
+  display: grid;
+  grid-template-columns:
+          [container-start content-start] $lyt-content-width-base [content-end container-end];
+
+  @media (min-width: map-get($breakpoints, md)) {
+    grid-template-columns:
+            [container-start pad-1-start] $lyt-pad-width-base
+            [pad-1-end content-start] minmax($lyt-content-min-width-md, $lyt-content-max-width-md)
+            [content-end pad-2-start] $lyt-pad-width-base [pad-2-end container-end];
+  }
+}
+
+/**
+ * Full bleed layout wrapper
+ *
+ * Use as a wrapper to create the full-bleed element
+ */
+@mixin lyt-full-bleed-wrapper {
+  @include lyt-container;
+  grid-column: container-start / container-end;
+}
+
+/* Column fluid layout
+   ========================================================================== */
+
+/**
+ * Layout content container
+ *
+ * Use to the content container in the document layout container
+ */
+@mixin lyt-content-container {
+  padding: $spacing-base;
+  display: grid;
+  grid-column: content-start / content-end;
+  grid-template-columns: [content-start] repeat($lyt-content-columns-base, [col-start] $lyt-content-column-width-base [col-end]) [content-end];
+  grid-column-gap: $spacing-base;
+
+  @media (min-width: map-get($breakpoints, md)) {
+    padding: $spacing-md;
+    grid-column-gap: $spacing-md;
+  }
+}
+
+/**
+ * Layout content wrapper
+ *
+ * Use as a wrapper to set occupation of columns
+ *
+ * @param   $width  the element row occupation, default value '1'
+ */
+@mixin lyt-content-wrapper($width: 1) {
+  grid-column-end: span 12;
+
+  @if $width == 2 {
+    @media (min-width: map-get($breakpoints, md)) {
+      grid-column-end: span 6;
+    }
+  } @else if $width == 3 or $width == 4 {
+    @media (min-width: map-get($breakpoints, md)) {
+      grid-column-end: span 4;
+    }
+  }
+
+  @if $width == 4 {
+    @media (min-width: map-get($breakpoints, lg)) {
+      grid-column-end: span 3;
+    }
+  }
+}
