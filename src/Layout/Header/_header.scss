@@ -6,4 +6,23 @@
 .header {
   @include lyt-container;
   grid-area: header;
+  background: map-get($bg-clrs, primary);
 }
+
+.header__content-container {
+  @include lyt-content-container;
+}
+
+.header__content-wrapper {
+  @include lyt-content-wrapper;
+  @include align-content($align: center, $justify: space-between);
+}
+
+.header__title {
+  color: map-get($text-clrs, white);
+
+  @media (min-width: map-get($breakpoints, md)) {
+    @include set-font-size(5rem);
+  }
+}
+

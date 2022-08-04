@@ -1,9 +1,0 @@
-@use '../../Assets/Styles/Abstracts/mixins' as *;
-@use '../../Assets/Styles/Abstracts/variables' as *;
-@use '../../Assets/Styles/Base/colors' as *;
-@use '../Grid/grid' as *;
-
-.header {
-  @include lyt-container;
-  grid-area: aside;
-}

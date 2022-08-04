@@ -1,16 +1,32 @@
 /* Typography
    ========================================================================== */
 @font-face {
-    /* font-family: ""; */
-    /* src: url("") format(""); */
+    font-family: "Roboto";
+    src: url("/src/Assets/Fonts/roboto-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: block;
 }
 
 @font-face {
-    /* font-family: ""; */
-    /* src: url("") format(""); */
+    font-family: "Roboto";
+    src: url("/src/Assets/Fonts/roboto-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "RobotoMono";
+    src: url("/src/Assets/Fonts/robotoMono-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "RobotoMono";
+    src: url("/src/Assets/Fonts/robotoMono-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: block;
@@ -304,7 +320,7 @@ button:focus {
 * {
     font-size: 1rem;
     line-height: 1.25rem;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Headings
@@ -342,7 +358,7 @@ h6 {
 /* Grouping content
    ========================================================================== */
 pre {
-    font-family: Menlo, Monaco, "Courier New", monospace;
+    font-family: "RobotoMono", Menlo, Monaco, "Courier New", monospace;
 }
 
 /* Text-level semantics
@@ -355,7 +371,7 @@ strong {
 code,
 kbd,
 samp {
-    font-family: Menlo, Monaco, "Courier New", monospace;
+    font-family: "RobotoMono", Menlo, Monaco, "Courier New", monospace;
 }
 
 small {

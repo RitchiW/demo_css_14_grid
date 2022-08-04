@@ -1,0 +1,29 @@
+@use '../../Assets/Styles/Abstracts/variables' as *;
+@use '../../Assets/Styles/Abstracts/mixins' as *;
+@use '../../Components/UI/Button/button' as *;
+
+.mobile-toggle-btn {
+  @include btn-square($bg-color: secondary, $spacing: map-get($spacing, 7));
+  @include align-content($direction: column, $justify: space-around);
+  width: 2.75rem;
+  height: 2.75rem;
+
+  @media (min-width: map-get($breakpoints, md)) {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  @media (min-width: map-get($breakpoints, xxxl)) {
+    display: none;
+  }
+}
+
+.mobile-toggle-btn__bar {
+  height: 0.25rem;
+  border-radius: $border-radius-base;
+  background: white;
+
+  @media (min-width: map-get($breakpoints, md)) {
+    height: 0.32rem;
+  }
+}

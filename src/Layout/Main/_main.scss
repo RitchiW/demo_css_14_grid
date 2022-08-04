@@ -7,3 +7,12 @@
   @include lyt-container;
   grid-area: main;
 }
+
+.main__content-container {
+  @include lyt-content-container;
+}
+
+.main__content-wrapper {
+  @include lyt-content-wrapper;
+  @include align-content($direction: column, $gap: $spacing-base);
+}

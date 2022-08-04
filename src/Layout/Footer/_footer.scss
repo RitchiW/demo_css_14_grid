@@ -6,4 +6,18 @@
 .footer {
   @include lyt-container;
   grid-area: footer;
+  background: map-get($bg-clrs, secondary);
+}
+
+.footer__content-container {
+  @include lyt-content-container;
+}
+
+.footer__content-wrapper {
+  @include lyt-content-wrapper;
+  @include align-content;
+}
+
+.footer__copyrights {
+  color: map-get($text-clrs, white);
 }
