@@ -6,13 +6,19 @@
  * Create the card
  *
  * @param   $bg-color   the background color, default value 'transparent'
+ * @param   $radius     the border radius, default value 'true'
  * @param   $shadow     the box-shadow, default value 'none'
  */
-@mixin card($bg-color: transparent, $bow-shadow: none) {
+@mixin card($bg-color: transparent, $border-radius: true, $shadow: none) {
   padding: $spacing-base;
-  border-radius: $border-radius-base;
   background: map-get($bg-clrs, $bg-color);
-  box-shadow: $bow-shadow;
+  box-shadow: $shadow;
+
+  @if $border-radius {
+    border-radius: $border-radius-base;
+  } @else {
+    border-radius: 0;
+  }
 
   @media (min-width: map-get($breakpoints, md)) {
     padding: $spacing-md;

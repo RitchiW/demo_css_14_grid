@@ -476,14 +476,15 @@ sub {
   }
 }
 
-.navbar {
-  display: grid;
-  grid-template-columns: [container-start content-start] 1fr [content-end container-end];
-  grid-area: navbar;
+.navbar-aside {
+  grid-column: pad-1-start/pad-1-end;
+  display: none;
+  border-right: 1px solid #ced4da;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
 }
-@media (min-width: 48rem) {
-  .navbar {
-    grid-template-columns: [container-start pad-1-start] 1fr [pad-1-end content-start] minmax(48rem, 67rem) [content-end pad-2-start] 1fr [pad-2-end container-end];
+@media (min-width: 120rem) {
+  .navbar-aside {
+    display: block;
   }
 }
 
@@ -651,6 +652,7 @@ sub {
  * Create the card
  *
  * @param   $bg-color   the background color, default value 'transparent'
+ * @param   $radius     the border radius, default value 'true'
  * @param   $shadow     the box-shadow, default value 'none'
  */
 .example {
@@ -660,9 +662,9 @@ sub {
   justify-content: space-around;
   gap: 1rem;
   padding: 1rem;
-  border-radius: 16px;
   background: #c8eff9;
   box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+  border-radius: 16px;
 }
 @media (min-width: 48rem) {
   .example {
@@ -681,16 +683,18 @@ sub {
 
 .example__container {
   padding: 1rem;
-  border-radius: 16px;
   background: #fff;
   box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+  border-radius: 16px;
   width: 100%;
 }
 @media (min-width: 48rem) {
   .example__container {
     padding: 1.5rem;
   }
-} /* Demo
+}
+
+/* Demo
    ========================================================================== */
 
 /*# sourceMappingURL=index.css.map */

@@ -5,7 +5,7 @@
 
 .example {
   @include align-content($direction: column, $align: center, $gap: $spacing-base);
-  @include card(info, $shadow-base);
+  @include card($bg-color: info, $shadow: $shadow-base);
 }
 
 .example__title {
@@ -13,6 +13,6 @@
 }
 
 .example__container {
-  @include card(map-get($bg-clrs, white), $shadow-base);
+  @include card($bg-color: map-get($bg-clrs, white), $shadow: $shadow-base);
   width: 100%;
 }
