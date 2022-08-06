@@ -14,5 +14,5 @@
 
 .main__content-wrapper {
   @include lyt-content-wrapper;
-  @include align-content($direction: column, $gap: $spacing-base);
+  @include align-content($direction: column, $justify: flex-start, $gap: $spacing-base);
 }

@@ -4,15 +4,26 @@
 @use '../../Components/UI/Card/card' as *;
 
 .example {
-  @include align-content($direction: column, $align: center, $gap: $spacing-base);
+  @include align-content($direction: column, $align: stretch, $gap: $spacing-base);
   @include card($bg-color: info, $shadow: $shadow-base);
 }
 
 .example__title {
+  text-align: center;
   color: map-get($text-clrs, secondary);
 }
 
 .example__container {
   @include card($bg-color: map-get($bg-clrs, white), $shadow: $shadow-base);
-  width: 100%;
+  display: grid;
+  gap: $spacing-base;
+  overflow: hidden;
+
+  @media (min-width: map-get($breakpoints, md)) {
+    gap: $spacing-md;
+  }
+}
+
+.example__item {
+  @include card($bg-color: primary, $shadow: $shadow-base);
 }
