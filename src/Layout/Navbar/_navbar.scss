@@ -2,12 +2,14 @@
 @use '../../Assets/Styles/Abstracts/variables' as *;
 @use '../../Assets/Styles/Base/colors' as *;
 @use '../Grid/grid' as *;
+@use '../../Components/UI/Card/card' as *;
 
 .navbar-aside {
+  @include card($radius: false, $shadow: $shadow-base);
+  max-width: 300px;
   grid-column: pad-1-start / pad-1-end;
   display: none;
   border-right: 1px solid map-get($grays, 400);
-  box-shadow: $shadow-base;
 
   @media (min-width: map-get($breakpoints, xxxl)) {
     display: block;

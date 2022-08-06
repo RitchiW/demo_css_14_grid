@@ -476,11 +476,26 @@ sub {
   }
 }
 
+/**
+ * Create the card
+ *
+ * @param   $bg-color   the background color, default value 'transparent'
+ * @param   $radius     the border radius, default value 'true'
+ * @param   $shadow     the box-shadow, default value 'none'
+ */
 .navbar-aside {
+  padding: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+  border-radius: 0;
+  max-width: 300px;
   grid-column: pad-1-start/pad-1-end;
   display: none;
   border-right: 1px solid #ced4da;
-  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+}
+@media (min-width: 48rem) {
+  .navbar-aside {
+    padding: 1.5rem;
+  }
 }
 @media (min-width: 120rem) {
   .navbar-aside {
@@ -648,13 +663,6 @@ sub {
   }
 }
 
-/**
- * Create the card
- *
- * @param   $bg-color   the background color, default value 'transparent'
- * @param   $radius     the border radius, default value 'true'
- * @param   $shadow     the box-shadow, default value 'none'
- */
 .example {
   display: flex;
   flex-flow: column nowrap;
