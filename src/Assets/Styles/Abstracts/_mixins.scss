@@ -36,3 +36,31 @@
     gap: $gap * $gap-ratio-md;
   }
 }
+
+/* Grid
+   ========================================================================== */
+
+/**
+ * Set the grid parent container
+ *
+ * @param   $cols               sizes of columns, default value '1fr'
+ * @param   $rows               sizes of rows, default value '1fr'
+ * @param   $align-content      the align of content, default value 'center'
+ * @param   $justify-content    the justify of content, default value 'center'
+ * @param   $align-items        the align of items, default value 'stretch'
+ * @param   $justify-items      the justify of items, default value 'stretch'
+ * @param   $gap                the gap between items, default value '0'
+ */
+@mixin grid-content($cols: 1fr, $rows: 1fr, $align-content: center, $justify-content: center, $align-items: stretch, $justify-items: stretch, $gap: 0) {
+  display: grid;
+  grid-template: $cols / $rows;
+  align-content: $align-content;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  justify-items: $justify-items;
+  grid-gap: $gap;
+
+  @media (min-width: map-get($breakpoints, md)) {
+    grid-gap: $gap * $gap-ratio-md;
+  }
+}
