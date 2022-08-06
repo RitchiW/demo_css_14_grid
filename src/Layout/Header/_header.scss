@@ -6,7 +6,7 @@
 .header {
   @include lyt-container;
   grid-area: header;
-  background: map-get($bg-clrs, primary);
+  background: map-get($bg-clrs, info);
 }
 
 .header__content-container {

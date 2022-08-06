@@ -22,7 +22,7 @@ $grays: (
 
 // Text color scheme
 $text-clrs: (
-        primary : #96ffff,
+        primary : #c8eff9,
         secondary : #022449,
         info : #55bdca,
         highlight : #f27d42,
@@ -38,9 +38,9 @@ $text-clrs: (
 
 // Background color scheme
 $bg-clrs: (
-        primary : #55bdca,
+        primary : #96ffff,
         secondary : #022449,
-        info : #c8eff9,
+        info : #55bdca,
         highlight : #f27d42,
         muted : map-get($grays, 500),
         success : #7AFC46,

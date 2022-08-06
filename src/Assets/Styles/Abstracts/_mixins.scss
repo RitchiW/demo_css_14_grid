@@ -26,6 +26,10 @@
  * @param   $gap          the gap between items, default value '0'
  */
 @mixin align-content($direction: row, $wrap: nowrap, $align: stretch, $justify: space-around, $gap: 0) {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-flow: $direction $wrap;
   align-items: $align;
