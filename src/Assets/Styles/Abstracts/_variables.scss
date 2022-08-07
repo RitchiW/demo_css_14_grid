@@ -82,12 +82,17 @@ $breakpoints: (
    ========================================================================== */
 
 // Layout pad
-$lyt-pad-width-base: 1fr;
+$lyt-main-pad-width-base: 1fr;
+$lyt-cst-pad-width-base: 20rem;
+
+// Layout navbar
+$lyt-cst-navbar-width: $lyt-cst-pad-width-base;
 
 // Layout content
 $lyt-content-width-base: 1fr;
-$lyt-content-min-width-md: 48rem;
-$lyt-content-max-width-md: 67rem;
+$lyt-main-content-min-width-md: 48rem;
+$lyt-main-content-max-width-md: 67rem;
+$lyt-cst-content-width: 1fr;
 
 // Layout columns
 $lyt-content-column-width-base: 1fr;
