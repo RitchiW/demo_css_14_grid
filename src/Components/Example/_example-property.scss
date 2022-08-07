@@ -17,8 +17,8 @@
 
 .example-property__content {
   @include grid-content([row-1-start] 150px [row-1end row-2-start] 150px [row-2-end], [col-1-start] 150px [col-1-end col-2-start] 150px [col-2-end], $gap: $spacing-base);
-  height: 600px;
   width: 600px;
+  height: 600px;
 
   &--one-row {
     @extend .example-property__content;
