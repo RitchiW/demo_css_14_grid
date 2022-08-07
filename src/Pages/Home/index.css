@@ -1,29 +1,15 @@
 /* Typography
    ========================================================================== */
 @font-face {
-  font-family: "Roboto";
-  src: url("/src/Assets/Fonts/roboto-Regular.ttf") format("truetype");
+  font-family: "Open sans";
+  src: url("/src/Assets/Fonts/openSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: block;
 }
 @font-face {
-  font-family: "Roboto";
-  src: url("/src/Assets/Fonts/roboto-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "RobotoMono";
-  src: url("/src/Assets/Fonts/robotoMono-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "RobotoMono";
-  src: url("/src/Assets/Fonts/robotoMono-Bold.ttf") format("truetype");
+  font-family: "Open sans";
+  src: url("/src/Assets/Fonts/openSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: block;
@@ -329,7 +315,7 @@ button:focus {
 * {
   font-size: 1rem;
   line-height: 1.25rem;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Headings
@@ -367,7 +353,7 @@ h6 {
 /* Grouping content
    ========================================================================== */
 pre {
-  font-family: "RobotoMono", Menlo, Monaco, "Courier New", monospace;
+  font-family: Menlo, Monaco, "Courier New", monospace;
 }
 
 /* Text-level semantics
@@ -380,7 +366,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: "RobotoMono", Menlo, Monaco, "Courier New", monospace;
+  font-family: Menlo, Monaco, "Courier New", monospace;
 }
 
 small {
@@ -502,24 +488,28 @@ sub {
  * @param   $radius     the border radius, default value 'true'
  * @param   $shadow     the box-shadow, default value 'none'
  */
-.navbar-aside {
+.cst-navbar {
   padding: 1rem;
+  background: #022449;
   box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
   border-radius: 0;
-  margin-right: 1.5rem;
-  width: 22rem;
-  grid-column: pad-1-start/pad-1-end;
+  width: 20rem;
+  height: 100vh;
   display: none;
-  border-right: 1px solid #ced4da;
-  justify-self: right;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1000;
 }
 @media (min-width: 48rem) {
-  .navbar-aside {
+  .cst-navbar {
     padding: 1.5rem;
   }
 }
-@media (min-width: 120rem) {
-  .navbar-aside {
+@media (min-width: 48rem) {
+  .cst-navbar {
+    padding-top: 9.75rem;
+    padding-bottom: 5.75rem;
     display: block;
   }
 }
@@ -533,12 +523,16 @@ sub {
   flex-flow: column nowrap;
   align-items: stretch;
   justify-content: space-around;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 @media (min-width: 48rem) {
   .navbar__links {
-    gap: 1.5rem;
+    gap: 2.25rem;
   }
+}
+
+.navbar__link {
+  color: #adb5bd;
 }
 
 .main {
@@ -548,7 +542,7 @@ sub {
 }
 @media (min-width: 48rem) {
   .main {
-    grid-template-columns: [container-start pad-1-start] 1fr [pad-1-end content-start] minmax(48rem, 67rem) [content-end pad-2-start] 1fr [pad-2-end container-end];
+    grid-template-columns: [container-start pad-1-start] 20rem [pad-1-end content-start] 1fr [content-end container-end];
   }
 }
 
@@ -577,6 +571,11 @@ sub {
   align-items: stretch;
   justify-content: flex-start;
   gap: 1rem;
+}
+@media (min-width: 48rem) {
+  .main__content-wrapper {
+    grid-column-end: span 6;
+  }
 }
 @media (min-width: 48rem) {
   .main__content-wrapper {
@@ -691,12 +690,6 @@ sub {
   }
 }
 @media (min-width: 48rem) {
-  .mobile-toggle-btn {
-    width: 3.5rem;
-    height: 3.5rem;
-  }
-}
-@media (min-width: 120rem) {
   .mobile-toggle-btn {
     display: none;
   }
@@ -820,8 +813,8 @@ sub {
   align-items: stretch;
   justify-items: stretch;
   grid-gap: 1rem;
-  height: 600px;
   width: 600px;
+  height: 600px;
 }
 @media (min-width: 48rem) {
   .example-property__content, .example-property__content--implicit, .example-property__content--center, .example-property__content--one-col, .example-property__content--one-row {

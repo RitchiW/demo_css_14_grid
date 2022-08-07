@@ -13,6 +13,6 @@
 }
 
 .main__content-wrapper {
-  @include lyt-content-wrapper;
+  @include lyt-content-wrapper(2);
   @include align-content($direction: column, $justify: flex-start, $gap: $spacing-base);
 }
