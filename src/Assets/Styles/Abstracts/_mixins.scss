@@ -55,9 +55,9 @@
  * @param   $justify-items      the justify of items, default value 'stretch'
  * @param   $gap                the gap between items, default value '0'
  */
-@mixin grid-content($cols: 1fr, $rows: 1fr, $align-content: center, $justify-content: center, $align-items: stretch, $justify-items: stretch, $gap: 0) {
+@mixin grid-content($rows: 1fr, $cols: 1fr, $align-content: center, $justify-content: center, $align-items: stretch, $justify-items: stretch, $gap: 0) {
   display: grid;
-  grid-template: $cols / $rows;
+  grid-template: $rows / $cols;
   align-content: $align-content;
   justify-content: $justify-content;
   align-items: $align-items;
