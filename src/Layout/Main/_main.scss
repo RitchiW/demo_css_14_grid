@@ -4,7 +4,7 @@
 @use '../Grid/grid' as *;
 
 .main {
-  @include lyt-container;
+  @include lyt-container(cst);
   grid-area: main;
 }
 
