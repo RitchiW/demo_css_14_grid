@@ -16,8 +16,8 @@
 }
 
 .example-property__content {
-  @include grid-content([row-1-start] 100px [row-1end row-2-start] 100px [row-2-end], [col-1-start] 100px [col-1-end col-2-start] 100px [col-2-end], $gap: $spacing-base);
-  height: 400px;
+  @include grid-content([row-1-start] 150px [row-1end row-2-start] 150px [row-2-end], [col-1-start] 150px [col-1-end col-2-start] 150px [col-2-end], $gap: $spacing-base);
+  height: 600px;
   width: 600px;
 
   &--no-rows {
@@ -29,8 +29,25 @@
     @extend .example-property__content;
     grid-template-columns: 100px;
   }
+
+  &--center {
+    @extend .example-property__content;
+    align-items: center;
+    justify-items: center;
+  }
+
+  &--implicit {
+    @extend .example-property__content;
+    grid-template: 100px / 200px;
+  }
 }
 
 .example-property__item {
   @include card($bg-color: primary, $shadow: $shadow-base);
+
+  &--sized {
+    @extend .example-property__item;
+    height: 100px;
+    width: 100px;
+  }
 }

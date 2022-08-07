@@ -22,20 +22,656 @@
 </header>
 <main class="main">
     <div class="navbar-aside">
-        Text
-    </div>
-    <div class="main__content-container">
-        <ul class="main__content-wrapper">
-            <li class="example">
-                <h2 class="example__title">Text</h2>
-                <div class="example__container">
-                    Container
-                </div>
+        <ul class="navbar__links">
+            <li class="navbar__link-wrapper"><a class="navbar__link" href="#gridTemplateExample">Grid template</a></li>
+            <li class="navbar__link-wrapper"><a class="navbar__link" href="#gridTemplateAreasExample">Grid template
+                areas</a></li>
+            <li class="navbar__link-wrapper"><a class="navbar__link" href="#automaticallyGeneratedAreasExample">Automatically
+                generated areas</a></li>
+            <li class="navbar__link-wrapper"><a class="navbar__link" href="#gridGapExample">Grid gap</a></li>
+            <li class="navbar__link-wrapper"><a class="navbar__link" href="#alignContentExample">Align content</a></li>
+            <li class="navbar__link-wrapper"><a class="navbar__link" href="#justifyContentExample">Justify content</a>
             </li>
+            <li class="navbar__link-wrapper"><a class="navbar__link" href="#placeContentExample">Place content</a></li>
+            <li class="navbar__link-wrapper"><a class="navbar__link" href="#alignItemsExample">Align items</a></li>
+            <li class="navbar__link-wrapper"><a class="navbar__link" href="#justifyItemsExample">Justify items</a></li>
+            <li class="navbar__link-wrapper"><a class="navbar__link" href="#placeItemsExample">Place items</a></li>
+            <li class="navbar__link-wrapper"><a class="navbar__link" href="#gridAutoRowsExample">Grid auto rows</a></li>
+            <li class="navbar__link-wrapper"><a class="navbar__link" href="#gridAutoColumnsExample">Grid auto
+                columns</a></li>
+            <li class="navbar__link-wrapper"><a class="navbar__link" href="#gridAutoFlowExample">Grid flow</a></li>
+            <li class="navbar__link-wrapper"><a class="navbar__link" href="#gridRowExample">Grid row</a></li>
+            <li class="navbar__link-wrapper"><a class="navbar__link" href="#gridColumnExample">Grid column</a></li>
+            <li class="navbar__link-wrapper"><a class="navbar__link" href="#gridAreaExample">Grid area</a></li>
+            <li class="navbar__link-wrapper"><a class="navbar__link" href="#overlayItemsExample">Overlay items</a></li>
+            <li class="navbar__link-wrapper"><a class="navbar__link" href="#alignSelfExample">Align self</a></li>
+            <li class="navbar__link-wrapper"><a class="navbar__link" href="#justifySelfExample">Justify self</a></li>
+            <li class="navbar__link-wrapper"><a class="navbar__link" href="#placeSelfExample">Place self</a></li>
         </ul>
     </div>
+    <section class="main__content-container">
+        <ul class="main__content-wrapper">
+            <li class="example" id="gridTemplateExample">
+                <h2 class="example__title">Grid template</h2>
+                <ul class="example__content">
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-template-rows</h3>
+                        <ul class="example-property__content--no-cols" id="gridTemplateRows">
+                            <li class="example-property__item">1fr</li>
+                            <li class="example-property__item">100px</li>
+                            <li class="example-property__item">25%</li>
+                            <li class="example-property__item">2fr</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-template-rows & Named lines</h3>
+                        <ul class="example-property__content--no-cols" id="gridTemplateRowsNamedLines">
+                            <li class="example-property__item">1fr</li>
+                            <li class="example-property__item">100px</li>
+                            <li class="example-property__item">25%</li>
+                            <li class="example-property__item">2fr</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-template-columns</h3>
+                        <ul class="example-property__content--no-rows" id="gridTemplateColumns">
+                            <li class="example-property__item">1fr</li>
+                            <li class="example-property__item">100px</li>
+                            <li class="example-property__item">25%</li>
+                            <li class="example-property__item">2fr</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-template-columns & Named lines</h3>
+                        <ul class="example-property__content--no-rows" id="gridTemplateColumnsNamedLines">
+                            <li class="example-property__item">1fr</li>
+                            <li class="example-property__item">100px</li>
+                            <li class="example-property__item">25%</li>
+                            <li class="example-property__item">2fr</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-template</h3>
+                        <ul class="example-property__content" id="gridTemplate">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-template & Named lines</h3>
+                        <ul class="example-property__content" id="gridTemplateNamedLines">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="example" id="gridTemplateAreasExample">
+                <h2 class="example__title">Grid template areas</h2>
+                <ul class="example__content">
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-template-areas</h3>
+                        <ul class="example-property__content" id="gridTemplateAreas">
+                            <li class="example-property__item" id="gridTemplateAreasItem-1">1.</li>
+                            <li class="example-property__item" id="gridTemplateAreasItem-2">2.</li>
+                            <li class="example-property__item" id="gridTemplateAreasItem-3">3.</li>
+                            <li class="example-property__item" id="gridTemplateAreasItem-4">4.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="example" id="automaticallyGeneratedAreasExample">
+                <h2 class="example__title">Automatically generated areas</h2>
+                <ul class="example__content">
+                    <li class="example-property">
+                        <h3 class="example-property__title">Automatically generated areas</h3>
+                        <ul class="example-property__content" id="automaticallyGeneratedAreas">
+                            <li class="example-property__item" id="automaticallyGeneratedAreasItem">1.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="example" id="gridGapExample">
+                <h2 class="example__title">Grid gap</h2>
+                <ul class="example__content">
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-row-gap</h3>
+                        <ul class="example-property__content" id="gridRowGap">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-column-gap</h3>
+                        <ul class="example-property__content" id="gridColumnGap">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-gap</h3>
+                        <ul class="example-property__content" id="gridGap">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="example" id="alignContentExample">
+                <h2 class="example__title">Align content</h2>
+                <ul class="example__content">
+                    <li class="example-property">
+                        <h3 class="example-property__title">Align-content: Start</h3>
+                        <ul class="example-property__content" id="alignContentStart">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Align-content: End</h3>
+                        <ul class="example-property__content" id="alignContentEnd">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Align-content: Center</h3>
+                        <ul class="example-property__content" id="alignContentCenter">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Align-content: Stretch</h3>
+                        <ul class="example-property__content" id="alignContentStretch">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Align-content: Space-between</h3>
+                        <ul class="example-property__content" id="alignContentSpaceBetween">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Align-content: Space-around</h3>
+                        <ul class="example-property__content" id="alignContentSpaceAround">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Align-content: Space-evenly</h3>
+                        <ul class="example-property__content" id="alignContentSpaceEvenly">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="example" id="justifyContentExample">
+                <h2 class="example__title">Justify content</h2>
+                <ul class="example__content">
+                    <li class="example-property">
+                        <h3 class="example-property__title">Justify-content: Start</h3>
+                        <ul class="example-property__content" id="justifyContentStart">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Justify-content: End</h3>
+                        <ul class="example-property__content" id="justifyContentEnd">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Justify-content: Center</h3>
+                        <ul class="example-property__content" id="justifyContentCenter">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Justify-content: Stretch</h3>
+                        <ul class="example-property__content" id="justifyContentStretch">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Justify-content: Space-between</h3>
+                        <ul class="example-property__content" id="justifyContentSpaceBetween">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Justify-content: Space-around</h3>
+                        <ul class="example-property__content" id="justifyContentSpaceAround">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Justify-content: Space-evenly</h3>
+                        <ul class="example-property__content" id="justifyContentSpaceEvenly">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="example" id="placeContentExample">
+                <h2 class="example__title">Place content</h2>
+                <ul class="example__content">
+                    <li class="example-property">
+                        <h3 class="example-property__title">Place-content</h3>
+                        <ul class="example-property__content" id="placeContent">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="example" id="alignItemsExample">
+                <h2 class="example__title">Align-items</h2>
+                <ul class="example__content">
+                    <li class="example-property">
+                        <h3 class="example-property__title">Align-items: Start</h3>
+                        <ul class="example-property__content" id="alignItemsStart">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Align-items: End</h3>
+                        <ul class="example-property__content" id="alignItemsEnd">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Align-items: Center</h3>
+                        <ul class="example-property__content" id="alignItemsCenter">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Align-items: Stretch</h3>
+                        <ul class="example-property__content" id="alignItemsStretch">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="example" id="justifyItemsExample">
+                <h2 class="example__title">Justify items</h2>
+                <ul class="example__content">
+                    <li class="example-property">
+                        <h3 class="example-property__title">Justify-items: Start</h3>
+                        <ul class="example-property__content" id="justifyItemsStart">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Justify-items: End</h3>
+                        <ul class="example-property__content" id="justifyItemsEnd">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Justify-items: Center</h3>
+                        <ul class="example-property__content" id="justifyItemsCenter">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Justify-items: Stretch</h3>
+                        <ul class="example-property__content" id="justifyItemsStretch">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="example" id="placeItemsExample">
+                <h2 class="example__title">Place items</h2>
+                <ul class="example__content">
+                    <li class="example-property">
+                        <h3 class="example-property__title">Place-items</h3>
+                        <ul class="example-property__content" id="placeItems">
+                            <li class="example-property__item">1.</li>
+                            <li class="example-property__item">2.</li>
+                            <li class="example-property__item">3.</li>
+                            <li class="example-property__item">4.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="example" id="gridAutoRowsExample">
+                <h2 class="example__title">Grid auto rows</h2>
+                <ul class="example__content">
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-auto-rows</h3>
+                        <ul class="example-property__content--implicit" id="gridAutoRows">
+                            <li class="example-property__item">Explicit</li>
+                            <li class="example-property__item">Implicit</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="example" id="gridAutoColumnsExample">
+                <h2 class="example__title">Grid auto columns</h2>
+                <ul class="example__content">
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-auto-columns</h3>
+                        <ul class="example-property__content--implicit" id="gridAutoColumns">
+                            <li class="example-property__item">Explicit</li>
+                            <li class="example-property__item">Implicit</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="example" id="gridAutoFlowExample">
+                <h2 class="example__title">Grid auto flow</h2>
+                <ul class="example__content">
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-auto-flow: Row</h3>
+                        <ul class="example-property__content--implicit" id="gridAutoFlowRow">
+                            <li class="example-property__item">Explicit</li>
+                            <li class="example-property__item">Implicit</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-auto-flow: Column</h3>
+                        <ul class="example-property__content--implicit" id="gridAutoFlowColumn">
+                            <li class="example-property__item">Explicit</li>
+                            <li class="example-property__item">Implicit</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="example" id="gridRowExample">
+                <h2 class="example__title">Grid row</h2>
+                <ul class="example__content">
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-row-start</h3>
+                        <ul class="example-property__content">
+                            <li class="example-property__item" id="gridRowStart">1.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-row-start & Named lines</h3>
+                        <ul class="example-property__content">
+                            <li class="example-property__item" id="gridRowStartNamedLines">1.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-row-end</h3>
+                        <ul class="example-property__content">
+                            <li class="example-property__item" id="gridRowEnd">1.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-row-end & Named lines</h3>
+                        <ul class="example-property__content">
+                            <li class="example-property__item" id="gridRowEndNamedLines">1.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-row & Span</h3>
+                        <ul class="example-property__content">
+                            <li class="example-property__item" id="gridRowSpan">1.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-row & Named lines</h3>
+                        <ul class="example-property__content">
+                            <li class="example-property__item" id="gridRowNamedLines">1.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-row</h3>
+                        <ul class="example-property__content">
+                            <li class="example-property__item" id="gridRow">1.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="example" id="gridColumnExample">
+                <h2 class="example__title">Grid column</h2>
+                <ul class="example__content">
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-column-start</h3>
+                        <ul class="example-property__content">
+                            <li class="example-property__item" id="gridColumnStart">1.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-column-start & Named lines</h3>
+                        <ul class="example-property__content">
+                            <li class="example-property__item" id="gridColumnStartNamedLines">1.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-column-end</h3>
+                        <ul class="example-property__content">
+                            <li class="example-property__item" id="gridColumnEnd">1.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-column-end & Named lines</h3>
+                        <ul class="example-property__content">
+                            <li class="example-property__item" id="gridColumnEndNamedLines">1.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-column & Span</h3>
+                        <ul class="example-property__content">
+                            <li class="example-property__item" id="gridColumnSpan">1.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-column & Named lines</h3>
+                        <ul class="example-property__content">
+                            <li class="example-property__item" id="gridColumnNamedLines">1.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-column</h3>
+                        <ul class="example-property__content">
+                            <li class="example-property__item" id="gridColumn">1.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="example" id="gridAreaExample">
+                <h2 class="example__title">Grid area</h2>
+                <ul class="example__content">
+                    <li class="example-property">
+                        <h3 class="example-property__title">Grid-area</h3>
+                        <ul class="example-property__content">
+                            <li class="example-property__item" id="gridArea">1.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="example" id="overlayItemsExample">
+                <h2 class="example__title">Overlay items</h2>
+                <ul class="example__content">
+                    <li class="example-property">
+                        <h3 class="example-property__title">Overlay items</h3>
+                        <ul class="example-property__content">
+                            <li class="example-property__item" id="overlayItem1">1.</li>
+                            <li class="example-property__item" id="overlayItem2">2.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="example" id="alignSelfExample">
+                <h2 class="example__title">Align self</h2>
+                <ul class="example__content">
+                    <li class="example-property">
+                        <h3 class="example-property__title">Align-self: Start</h3>
+                        <ul class="example-property__content--center">
+                            <li class="example-property__item--sized">1.</li>
+                            <li class="example-property__item--sized" id="alignSelfStart">2.</li>
+                            <li class="example-property__item--sized">3.</li>
+                            <li class="example-property__item--sized">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Align-self: End</h3>
+                        <ul class="example-property__content--center">
+                            <li class="example-property__item--sized">1.</li>
+                            <li class="example-property__item--sized" id="alignSelfEnd">2.</li>
+                            <li class="example-property__item--sized">3.</li>
+                            <li class="example-property__item--sized">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Align-self: Center</h3>
+                        <ul class="example-property__content">
+                            <li class="example-property__item--sized">1.</li>
+                            <li class="example-property__item--sized" id="alignSelfCenter">2.</li>
+                            <li class="example-property__item--sized">3.</li>
+                            <li class="example-property__item--sized">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Align-self: Stretch</h3>
+                        <ul class="example-property__content--center">
+                            <li class="example-property__item--sized">1.</li>
+                            <li class="example-property__item" id="alignSelfStretch">2.</li>
+                            <li class="example-property__item--sized">3.</li>
+                            <li class="example-property__item--sized">4.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="example" id="justifySelfExample">
+                <h2 class="example__title">Justify-self</h2>
+                <ul class="example__content">
+                    <li class="example-property">
+                        <h3 class="example-property__title">Start</h3>
+                        <ul class="example-property__content--center">
+                            <li class="example-property__item--sized">1.</li>
+                            <li class="example-property__item--sized" id="justifySelfStart">2.</li>
+                            <li class="example-property__item--sized">3.</li>
+                            <li class="example-property__item--sized">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">End</h3>
+                        <ul class="example-property__content--center">
+                            <li class="example-property__item--sized">1.</li>
+                            <li class="example-property__item--sized" id="justifySelfEnd">2.</li>
+                            <li class="example-property__item--sized">3.</li>
+                            <li class="example-property__item--sized">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Center</h3>
+                        <ul class="example-property__content">
+                            <li class="example-property__item--sized">1.</li>
+                            <li class="example-property__item--sized" id="justifySelfCenter">2.</li>
+                            <li class="example-property__item--sized">3.</li>
+                            <li class="example-property__item--sized">4.</li>
+                        </ul>
+                    </li>
+                    <li class="example-property">
+                        <h3 class="example-property__title">Stretch</h3>
+                        <ul class="example-property__content--center">
+                            <li class="example-property__item--sized">1.</li>
+                            <li class="example-property__item" id="justifySelfStretch">2.</li>
+                            <li class="example-property__item--sized">3.</li>
+                            <li class="example-property__item--sized">4.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="example" id="placeSelfExample">
+                <h2 class="example__title">Place self</h2>
+                <ul class="example__content">
+                    <li class="example-property">
+                        <h3 class="example-property__title">Place-self</h3>
+                        <ul class="example-property__content--center">
+                            <li class="example-property__item--sized">1.</li>
+                            <li class="example-property__item--sized" id="placeSelf">2.</li>
+                            <li class="example-property__item--sized">3.</li>
+                            <li class="example-property__item--sized">4.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
 </main>
-
 <footer class="footer">
     <div class="footer__content-container">
         <div class="footer__content-wrapper">
