@@ -1,0 +1,36 @@
+@use '../../Assets/Styles/Abstracts/variables' as *;
+@use '../../Assets/Styles/Abstracts/mixins' as *;
+@use '../../Assets/Styles/Base/colors' as *;
+@use '../../Components/UI/Card/card' as *;
+
+.example-property {
+  @include card($bg-color: white, $shadow: $shadow-base);
+  @include align-content($direction: column, $align: center, $gap: $spacing-base);
+  width: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.example-property__title {
+  color: map-get($text-clrs, info);
+}
+
+.example-property__content {
+  @include grid-content([row-1-start] 100px [row-1end row-2-start] 100px [row-2-end], [col-1-start] 100px [col-1-end col-2-start] 100px [col-2-end], $gap: $spacing-base);
+  height: 400px;
+  width: 600px;
+
+  &--no-rows {
+    @extend .example-property__content;
+    grid-template-rows: 100px;
+  }
+
+  &--no-cols {
+    @extend .example-property__content;
+    grid-template-columns: 100px;
+  }
+}
+
+.example-property__item {
+  @include card($bg-color: primary, $shadow: $shadow-base);
+}

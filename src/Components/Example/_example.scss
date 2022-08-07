@@ -5,7 +5,7 @@
 
 .example {
   @include align-content($direction: column, $align: stretch, $gap: $spacing-base);
-  @include card($bg-color: info, $shadow: $shadow-base);
+  @include card($bg-color: primary, $shadow: $shadow-base);
 }
 
 .example__title {
@@ -13,17 +13,18 @@
   color: map-get($text-clrs, secondary);
 }
 
-.example__container {
-  @include card($bg-color: map-get($bg-clrs, white), $shadow: $shadow-base);
-  display: grid;
-  gap: $spacing-base;
-  overflow: hidden;
+.example__content {
+  @include card($bg-color: secondary, $shadow: $shadow-base);
+  @include align-content($justify: flex-start, $gap: $spacing-base);
+  overflow-x: scroll;
 
-  @media (min-width: map-get($breakpoints, md)) {
-    gap: $spacing-md;
+  &::-webkit-scrollbar {
+    height: 1rem;
+    background: transparent;
   }
-}
 
-.example__item {
-  @include card($bg-color: primary, $shadow: $shadow-base);
+  &::-webkit-scrollbar-thumb {
+    border-radius: $border-radius-base;
+    background: map-get($bg-clrs, highlight);
+  }
 }
