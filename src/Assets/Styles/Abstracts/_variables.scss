@@ -108,6 +108,8 @@ $img-path: "/src/Assets/Images/";
 
 // Base
 $z-index: (
+        background: -1010,
+        cst-navbar: -1000,
         dropdown : 1000,
         sticky : 1020,
         fixed : 1030,
