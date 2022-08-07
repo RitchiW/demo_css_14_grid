@@ -20,12 +20,12 @@
   height: 600px;
   width: 600px;
 
-  &--no-rows {
+  &--one-row {
     @extend .example-property__content;
     grid-template-rows: 100px;
   }
 
-  &--no-cols {
+  &--one-col {
     @extend .example-property__content;
     grid-template-columns: 100px;
   }

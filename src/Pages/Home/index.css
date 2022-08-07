@@ -1,37 +1,33 @@
 /* Typography
    ========================================================================== */
 @font-face {
-    font-family: "Roboto";
-    src: url("/src/Assets/Fonts/roboto-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: block;
+  font-family: "Roboto";
+  src: url("/src/Assets/Fonts/roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
 }
-
 @font-face {
-    font-family: "Roboto";
-    src: url("/src/Assets/Fonts/roboto-Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-    font-display: block;
+  font-family: "Roboto";
+  src: url("/src/Assets/Fonts/roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
 }
-
 @font-face {
-    font-family: "RobotoMono";
-    src: url("/src/Assets/Fonts/robotoMono-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: block;
+  font-family: "RobotoMono";
+  src: url("/src/Assets/Fonts/robotoMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
 }
-
 @font-face {
-    font-family: "RobotoMono";
-    src: url("/src/Assets/Fonts/robotoMono-Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-    font-display: block;
+  font-family: "RobotoMono";
+  src: url("/src/Assets/Fonts/robotoMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
 }
-
 /* Breakpoints
    ========================================================================== */
 /* Layout
@@ -81,7 +77,7 @@
  * Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-    -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 /* Sections
@@ -90,7 +86,7 @@ html {
  * Render the `main` element consistently in IE.
  */
 main {
-    display: block;
+  display: block;
 }
 
 /* Grouping content
@@ -99,8 +95,8 @@ main {
  * Show the overflow in Edge and IE.
  */
 hr {
-    height: 0;
-    overflow: visible;
+  height: 0;
+  overflow: visible;
 }
 
 /* Text-level semantics
@@ -109,7 +105,7 @@ hr {
  * Remove the gray background on active links in IE 10.
  */
 a {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 /**
@@ -117,8 +113,8 @@ a {
  * Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-    border-bottom: none;
-    text-decoration: underline dotted;
+  border-bottom: none;
+  text-decoration: underline dotted;
 }
 
 /**
@@ -127,17 +123,17 @@ abbr[title] {
  */
 sub,
 sup {
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
 
 sub {
-    bottom: -0.25rem;
+  bottom: -0.25rem;
 }
 
 sup {
-    top: -0.5rem;
+  top: -0.5rem;
 }
 
 /* Embedded content
@@ -146,7 +142,7 @@ sup {
  * Remove the border on images inside links in IE 10.
  */
 img {
-    border: none;
+  border: none;
 }
 
 /* Forms
@@ -157,7 +153,7 @@ img {
  */
 button,
 input {
-    overflow: visible;
+  overflow: visible;
 }
 
 /**
@@ -166,7 +162,7 @@ input {
  */
 button,
 select {
-    text-transform: none;
+  text-transform: none;
 }
 
 /**
@@ -176,7 +172,7 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-    -webkit-appearance: button;
+  -webkit-appearance: button;
 }
 
 /**
@@ -186,8 +182,8 @@ button::-moz-focus-inner,
 [type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
 [type=submit]::-moz-focus-inner {
-    border: none;
-    padding: 0;
+  border: none;
+  padding: 0;
 }
 
 /**
@@ -197,7 +193,7 @@ button:-moz-focusring,
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
 [type=submit]:-moz-focusring {
-    outline: none;
+  outline: none;
 }
 
 /**
@@ -205,24 +201,24 @@ button:-moz-focusring,
  * Correct the color inheritance from `fieldset` elements in IE.
  */
 legend {
-    color: inherit;
-    display: table;
-    max-width: 100%;
-    white-space: normal;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
 }
 
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
-    vertical-align: baseline;
+  vertical-align: baseline;
 }
 
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
 textarea {
-    overflow: auto;
+  overflow: auto;
 }
 
 /**
@@ -231,8 +227,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-    box-sizing: border-box;
-    padding: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 /**
@@ -240,7 +236,7 @@ textarea {
  */
 [type=number]::-webkit-inner-spin-button,
 [type=number]::-webkit-outer-spin-button {
-    height: auto;
+  height: auto;
 }
 
 /**
@@ -248,22 +244,22 @@ textarea {
  * Correct the outline style in Safari.
  */
 [type=search] {
-    -webkit-appearance: textfield;
-    outline: none;
+  -webkit-appearance: textfield;
+  outline: none;
 }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
 [type=search]::-webkit-search-decoration {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
 ::-webkit-file-upload-button {
-    -webkit-appearance: button;
+  -webkit-appearance: button;
 }
 
 /* Interactive
@@ -272,14 +268,14 @@ textarea {
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
 details {
-    display: block;
+  display: block;
 }
 
 /*
  * Add the correct display in all browsers.
  */
 summary {
-    display: list-item;
+  display: list-item;
 }
 
 /* Misc
@@ -288,14 +284,14 @@ summary {
  * Add the correct display in IE 10+.
  */
 template {
-    display: none;
+  display: none;
 }
 
 /**
  * Add the correct display in IE 10.
  */
 [hidden] {
-    display: none;
+  display: none;
 }
 
 /* Document
@@ -303,105 +299,105 @@ template {
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    background: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: none;
 }
 
 /* Text-level semantics
    ========================================================================== */
 a {
-    display: inline-block;
-    text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 /* Forms
    ========================================================================== */
 button:focus {
-    outline: none;
+  outline: none;
 }
 
 /* Document
    ========================================================================== */
 * {
-    font-size: 1rem;
-    line-height: 1.25rem;
-    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Headings
    ========================================================================== */
 h1 {
-    font-size: 2.5rem;
-    line-height: 2.75rem;
+  font-size: 2.5rem;
+  line-height: 2.75rem;
 }
 
 h2 {
-    font-size: 2rem;
-    line-height: 2.25rem;
+  font-size: 2rem;
+  line-height: 2.25rem;
 }
 
 h3 {
-    font-size: 1.75rem;
-    line-height: 2rem;
+  font-size: 1.75rem;
+  line-height: 2rem;
 }
 
 h4 {
-    font-size: 1.15rem;
-    line-height: 1.4rem;
+  font-size: 1.15rem;
+  line-height: 1.4rem;
 }
 
 h5 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }
 
 h6 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
 }
 
 /* Grouping content
    ========================================================================== */
 pre {
-    font-family: "RobotoMono", Menlo, Monaco, "Courier New", monospace;
+  font-family: "RobotoMono", Menlo, Monaco, "Courier New", monospace;
 }
 
 /* Text-level semantics
    ========================================================================== */
 b,
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 code,
 kbd,
 samp {
-    font-family: "RobotoMono", Menlo, Monaco, "Courier New", monospace;
+  font-family: "RobotoMono", Menlo, Monaco, "Courier New", monospace;
 }
 
 small {
-    font-size: 0.5rem;
-    line-height: 0.75rem;
+  font-size: 0.5rem;
+  line-height: 0.75rem;
 }
 
 sup,
 sub {
-    font-size: 0.75rem;
+  font-size: 0.75rem;
 }
 
 /* Forms
    ========================================================================== */
 ::-webkit-file-upload-button {
-    font-size: 1rem;
-    line-height: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
 }
 
 /* Colors
@@ -415,10 +411,10 @@ sub {
  * Set the grid-template-areas to create the page layout
  */
 .lyt-base-container, .body {
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: "header" "main" "footer";
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main" "footer";
 }
 
 /**
@@ -446,61 +442,57 @@ sub {
  * @param   $width  the element row occupation, default value '1'
  */
 .header {
-    display: grid;
-    grid-template-columns: [container-start content-start] 1fr [content-end container-end];
-    grid-area: header;
-    background: #55bdca;
+  display: grid;
+  grid-template-columns: [container-start content-start] 1fr [content-end container-end];
+  grid-area: header;
+  background: #55bdca;
 }
-
 @media (min-width: 48rem) {
-    .header {
-        grid-template-columns: [container-start pad-1-start] 1fr [pad-1-end content-start] minmax(48rem, 67rem) [content-end pad-2-start] 1fr [pad-2-end container-end];
-    }
+  .header {
+    grid-template-columns: [container-start pad-1-start] 1fr [pad-1-end content-start] minmax(48rem, 67rem) [content-end pad-2-start] 1fr [pad-2-end container-end];
+  }
 }
 
 .header__content-container {
-    padding: 1rem;
-    display: grid;
-    grid-column: content-start/content-end;
-    grid-template-columns: [content-start] repeat(12, [col-start] 1fr [col-end]) [content-end];
-    grid-column-gap: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-column: content-start/content-end;
+  grid-template-columns: [content-start] repeat(12, [col-start] 1fr [col-end]) [content-end];
+  grid-column-gap: 1rem;
 }
-
 @media (min-width: 48rem) {
-    .header__content-container {
-        padding: 1.5rem;
-        grid-column-gap: 1.5rem;
-    }
+  .header__content-container {
+    padding: 1.5rem;
+    grid-column-gap: 1.5rem;
+  }
 }
 
 .header__content-wrapper {
-    grid-column-end: span 12;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0;
+  grid-column-end: span 12;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
 }
-
 @media (min-width: 48rem) {
-    .header__content-wrapper {
-        gap: 0;
-    }
+  .header__content-wrapper {
+    gap: 0;
+  }
 }
 
 .header__title {
-    color: #fff;
+  color: #fff;
 }
-
 @media (min-width: 48rem) {
-    .header__title {
-        font-size: 5rem;
-        line-height: 5.25rem;
-    }
+  .header__title {
+    font-size: 5rem;
+    line-height: 5.25rem;
+  }
 }
 
 /**
@@ -511,153 +503,144 @@ sub {
  * @param   $shadow     the box-shadow, default value 'none'
  */
 .navbar-aside {
-    padding: 1rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
-    border-radius: 0;
-    margin-right: 1.5rem;
-    width: 22rem;
-    grid-column: pad-1-start/pad-1-end;
-    display: none;
-    border-right: 1px solid #ced4da;
-    justify-self: right;
+  padding: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+  border-radius: 0;
+  margin-right: 1.5rem;
+  width: 22rem;
+  grid-column: pad-1-start/pad-1-end;
+  display: none;
+  border-right: 1px solid #ced4da;
+  justify-self: right;
 }
-
 @media (min-width: 48rem) {
-    .navbar-aside {
-        padding: 1.5rem;
-    }
+  .navbar-aside {
+    padding: 1.5rem;
+  }
 }
-
 @media (min-width: 120rem) {
-    .navbar-aside {
-        display: block;
-    }
+  .navbar-aside {
+    display: block;
+  }
 }
 
 .navbar__links {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: stretch;
-    justify-content: space-around;
-    gap: 1rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: space-around;
+  gap: 1rem;
 }
-
 @media (min-width: 48rem) {
-    .navbar__links {
-        gap: 1.5rem;
-    }
+  .navbar__links {
+    gap: 1.5rem;
+  }
 }
 
 .main {
-    display: grid;
-    grid-template-columns: [container-start content-start] 1fr [content-end container-end];
-    grid-area: main;
+  display: grid;
+  grid-template-columns: [container-start content-start] 1fr [content-end container-end];
+  grid-area: main;
 }
-
 @media (min-width: 48rem) {
-    .main {
-        grid-template-columns: [container-start pad-1-start] 1fr [pad-1-end content-start] minmax(48rem, 67rem) [content-end pad-2-start] 1fr [pad-2-end container-end];
-    }
+  .main {
+    grid-template-columns: [container-start pad-1-start] 1fr [pad-1-end content-start] minmax(48rem, 67rem) [content-end pad-2-start] 1fr [pad-2-end container-end];
+  }
 }
 
 .main__content-container {
-    padding: 1rem;
-    display: grid;
-    grid-column: content-start/content-end;
-    grid-template-columns: [content-start] repeat(12, [col-start] 1fr [col-end]) [content-end];
-    grid-column-gap: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-column: content-start/content-end;
+  grid-template-columns: [content-start] repeat(12, [col-start] 1fr [col-end]) [content-end];
+  grid-column-gap: 1rem;
 }
-
 @media (min-width: 48rem) {
-    .main__content-container {
-        padding: 1.5rem;
-        grid-column-gap: 1.5rem;
-    }
+  .main__content-container {
+    padding: 1.5rem;
+    grid-column-gap: 1.5rem;
+  }
 }
 
 .main__content-wrapper {
-    grid-column-end: span 12;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: stretch;
-    justify-content: flex-start;
-    gap: 1rem;
+  grid-column-end: span 12;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 1rem;
 }
-
 @media (min-width: 48rem) {
-    .main__content-wrapper {
-        gap: 1.5rem;
-    }
+  .main__content-wrapper {
+    gap: 1.5rem;
+  }
 }
 
 .footer {
-    display: grid;
-    grid-template-columns: [container-start content-start] 1fr [content-end container-end];
-    grid-area: footer;
-    background: #022449;
+  display: grid;
+  grid-template-columns: [container-start content-start] 1fr [content-end container-end];
+  grid-area: footer;
+  background: #022449;
 }
-
 @media (min-width: 48rem) {
-    .footer {
-        grid-template-columns: [container-start pad-1-start] 1fr [pad-1-end content-start] minmax(48rem, 67rem) [content-end pad-2-start] 1fr [pad-2-end container-end];
-    }
+  .footer {
+    grid-template-columns: [container-start pad-1-start] 1fr [pad-1-end content-start] minmax(48rem, 67rem) [content-end pad-2-start] 1fr [pad-2-end container-end];
+  }
 }
 
 .footer__content-container {
-    padding: 1rem;
-    display: grid;
-    grid-column: content-start/content-end;
-    grid-template-columns: [content-start] repeat(12, [col-start] 1fr [col-end]) [content-end];
-    grid-column-gap: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-column: content-start/content-end;
+  grid-template-columns: [content-start] repeat(12, [col-start] 1fr [col-end]) [content-end];
+  grid-column-gap: 1rem;
 }
-
 @media (min-width: 48rem) {
-    .footer__content-container {
-        padding: 1.5rem;
-        grid-column-gap: 1.5rem;
-    }
+  .footer__content-container {
+    padding: 1.5rem;
+    grid-column-gap: 1.5rem;
+  }
 }
 
 .footer__content-wrapper {
-    grid-column-end: span 12;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: stretch;
-    justify-content: space-around;
-    gap: 0;
+  grid-column-end: span 12;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-around;
+  gap: 0;
 }
-
 @media (min-width: 48rem) {
-    .footer__content-wrapper {
-        gap: 0;
-    }
+  .footer__content-wrapper {
+    gap: 0;
+  }
 }
 
 .footer__copyrights {
-    color: #fff;
+  color: #fff;
 }
 
 .backdrop {
-    width: 100vw;
-    height: 100vh;
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 /**
@@ -682,505 +665,485 @@ sub {
  * @param   $spacing-x    the padding of button on x axis, default value 'map-get($spacing, 5)'
  */
 .mobile-toggle-btn {
-    border-radius: 16px;
-    background: #022449;
-    color: #c8eff9;
-    cursor: pointer;
-    padding: 0.5rem;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: stretch;
-    justify-content: space-around;
-    gap: 0;
-    width: 2.75rem;
-    height: 2.75rem;
+  border-radius: 16px;
+  background: #022449;
+  color: #c8eff9;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: space-around;
+  gap: 0;
+  width: 2.75rem;
+  height: 2.75rem;
 }
-
 .mobile-toggle-btn:active, .mobile-toggle-btn:hover {
-    background: rgba(2, 36, 73, 0.8);
+  background: rgba(2, 36, 73, 0.8);
 }
-
 @media (min-width: 48rem) {
-    .mobile-toggle-btn {
-        gap: 0;
-    }
+  .mobile-toggle-btn {
+    gap: 0;
+  }
 }
-
 @media (min-width: 48rem) {
-    .mobile-toggle-btn {
-        width: 3.5rem;
-        height: 3.5rem;
-    }
+  .mobile-toggle-btn {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 }
-
 @media (min-width: 120rem) {
-    .mobile-toggle-btn {
-        display: none;
-    }
+  .mobile-toggle-btn {
+    display: none;
+  }
 }
 
 .mobile-toggle-btn__bar {
-    height: 0.25rem;
-    border-radius: 16px;
-    background: white;
+  height: 0.25rem;
+  border-radius: 16px;
+  background: white;
 }
-
 @media (min-width: 48rem) {
-    .mobile-toggle-btn__bar {
-        height: 0.32rem;
-    }
+  .mobile-toggle-btn__bar {
+    height: 0.32rem;
+  }
 }
 
 .example {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: stretch;
-    justify-content: space-around;
-    gap: 1rem;
-    padding: 1rem;
-    background: #96ffff;
-    box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
-    border-radius: 16px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
+  background: #96ffff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+  border-radius: 16px;
 }
-
 @media (min-width: 48rem) {
-    .example {
-        gap: 1.5rem;
-    }
+  .example {
+    gap: 1.5rem;
+  }
 }
-
 @media (min-width: 48rem) {
-    .example {
-        padding: 1.5rem;
-    }
+  .example {
+    padding: 1.5rem;
+  }
 }
 
 .example__title {
-    text-align: center;
-    color: #022449;
+  text-align: center;
+  color: #022449;
 }
 
 .example__content {
-    padding: 1rem;
-    background: #022449;
-    box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
-    border-radius: 16px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: stretch;
-    justify-content: flex-start;
-    gap: 1rem;
-    overflow-x: scroll;
+  padding: 1rem;
+  background: #022449;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 1rem;
+  overflow-x: scroll;
 }
-
 @media (min-width: 48rem) {
-    .example__content {
-        padding: 1.5rem;
-    }
+  .example__content {
+    padding: 1.5rem;
+  }
 }
-
 @media (min-width: 48rem) {
-    .example__content {
-        gap: 1.5rem;
-    }
+  .example__content {
+    gap: 1.5rem;
+  }
 }
-
 .example__content::-webkit-scrollbar {
-    height: 1rem;
-    background: transparent;
+  height: 1rem;
+  background: transparent;
 }
-
 .example__content::-webkit-scrollbar-thumb {
-    border-radius: 16px;
-    background: #f27d42;
+  border-radius: 16px;
+  background: #f27d42;
 }
 
 .example-property {
-    padding: 1rem;
-    background: #fff;
-    box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
-    border-radius: 16px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: space-around;
-    gap: 1rem;
-    width: 100%;
-    flex-shrink: 0;
-    overflow: hidden;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
 }
-
 @media (min-width: 48rem) {
-    .example-property {
-        padding: 1.5rem;
-    }
+  .example-property {
+    padding: 1.5rem;
+  }
 }
-
 @media (min-width: 48rem) {
-    .example-property {
-        gap: 1.5rem;
-    }
+  .example-property {
+    gap: 1.5rem;
+  }
 }
 
 .example-property__title {
-    color: #55bdca;
+  color: #55bdca;
 }
 
-.example-property__content, .example-property__content--implicit, .example-property__content--center, .example-property__content--no-cols, .example-property__content--no-rows {
-    display: grid;
-    grid-template: [row-1-start] 150px [row-1end row-2-start] 150px [row-2-end]/[col-1-start] 150px [col-1-end col-2-start] 150px [col-2-end];
-    align-content: center;
-    justify-content: center;
-    align-items: stretch;
-    justify-items: stretch;
-    grid-gap: 1rem;
-    height: 600px;
-    width: 600px;
+.example-property__content, .example-property__content--implicit, .example-property__content--center, .example-property__content--one-col, .example-property__content--one-row {
+  display: grid;
+  grid-template: [row-1-start] 150px [row-1end row-2-start] 150px [row-2-end]/[col-1-start] 150px [col-1-end col-2-start] 150px [col-2-end];
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  justify-items: stretch;
+  grid-gap: 1rem;
+  height: 600px;
+  width: 600px;
 }
-
 @media (min-width: 48rem) {
-    .example-property__content, .example-property__content--implicit, .example-property__content--center, .example-property__content--no-cols, .example-property__content--no-rows {
-        grid-gap: 1.5rem;
-    }
+  .example-property__content, .example-property__content--implicit, .example-property__content--center, .example-property__content--one-col, .example-property__content--one-row {
+    grid-gap: 1.5rem;
+  }
 }
-
-.example-property__content--no-rows {
-    grid-template-rows: 100px;
+.example-property__content--one-row {
+  grid-template-rows: 100px;
 }
-
-.example-property__content--no-cols {
-    grid-template-columns: 100px;
+.example-property__content--one-col {
+  grid-template-columns: 100px;
 }
-
 .example-property__content--center {
-    align-items: center;
-    justify-items: center;
+  align-items: center;
+  justify-items: center;
 }
-
 .example-property__content--implicit {
-    grid-template: 100px/200px;
+  grid-template: 100px/200px;
 }
 
 .example-property__item, .example-property__item--sized {
-    padding: 1rem;
-    background: #96ffff;
-    box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
-    border-radius: 16px;
+  padding: 1rem;
+  background: #96ffff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+  border-radius: 16px;
 }
-
 @media (min-width: 48rem) {
-    .example-property__item, .example-property__item--sized {
-        padding: 1.5rem;
-    }
+  .example-property__item, .example-property__item--sized {
+    padding: 1.5rem;
+  }
 }
-
 .example-property__item--sized {
-    height: 100px;
-    width: 100px;
+  height: 100px;
+  width: 100px;
 }
 
 /* Demo
    ========================================================================== */
 #gridTemplateRows {
-    grid-template-rows: 1fr 100px 25% auto;
+  grid-template-rows: 1fr 100px 25% auto;
 }
 
 #gridTemplateRowsNamedLines {
-    grid-template-rows: [row-1-start] 1fr [row-1-end row-2-start] 100px [row-2-end row-3-start] 25% [row-3-end row-4-start] auto [row-4-end];
+  grid-template-rows: [row-1-start] 1fr [row-1-end row-2-start] 100px [row-2-end row-3-start] 25% [row-3-end row-4-start] auto [row-4-end];
 }
 
 #gridTemplateColumns {
-    grid-template-columns: 1fr 100px 25% auto;
+  grid-template-columns: 1fr 100px 25% auto;
 }
 
 #gridTemplateColumnsNamedLines {
-    grid-template-columns: [col-1-start] 1fr [col-1-end col-2-start] 100px [col-2-end col-3-start] 25% [col-3-end col-4-start] auto [col-4-end];
+  grid-template-columns: [col-1-start] 1fr [col-1-end col-2-start] 100px [col-2-end col-3-start] 25% [col-3-end col-4-start] auto [col-4-end];
 }
 
 #gridTemplate {
-    grid-template: 100px 100px/200px 200px;
+  grid-template: 100px 100px/200px 200px;
 }
 
 #gridTemplateNamedLines {
-    grid-template: [row-1-start] 100px [row-1-end row-2-start] 100px [row-2-end]/[col-1-start] 200px [col-1-end col-2-start] 200px [col-2-end];
+  grid-template: [row-1-start] 100px [row-1-end row-2-start] 100px [row-2-end]/[col-1-start] 200px [col-1-end col-2-start] 200px [col-2-end];
 }
 
 #gridTemplateAreas {
-    grid-template-areas: "area-1 area-2" ". area-3";
+  grid-template-areas: "area-1 area-2" ". area-3";
 }
 
 #gridTemplateAreasItem-1 {
-    grid-area: area-1;
+  grid-area: area-1;
 }
 
 #gridTemplateAreasItem-2 {
-    grid-area: area-2;
+  grid-area: area-2;
 }
 
 #gridTemplateAreasItem-3 {
-    grid-area: area-3;
+  grid-area: area-3;
 }
 
 #automaticallyGeneratedAreas {
-    grid-template-rows: repeat(2, [row-start] 100px [row-end]);
-    grid-template-columns: repeat(2, [col-start] 200px [col-end]);
+  grid-template-rows: repeat(2, [row-start] 100px [row-end]);
+  grid-template-columns: repeat(2, [col-start] 200px [col-end]);
 }
 
 #automaticallyGeneratedAreasItem {
-    grid-column: col-start 1/col-end 2;
+  grid-column: col-start 1/col-end 2;
 }
 
 #gridRowGap {
-    grid-row-gap: 5rem;
+  grid-row-gap: 5rem;
 }
 
 #gridColumnGap {
-    grid-column-gap: 5rem;
+  grid-column-gap: 5rem;
 }
 
 #gridGap {
-    grid-gap: 5rem 5rem;
+  grid-gap: 5rem 5rem;
 }
 
 #alignContentStart {
-    align-content: start;
+  align-content: start;
 }
 
 #alignContentEnd {
-    align-content: end;
+  align-content: end;
 }
 
 #alignContentCenter {
-    align-content: center;
+  align-content: center;
 }
 
 #alignContentStretch {
-    grid-template-rows: 1fr 1fr;
-    align-content: stretch;
+  grid-template-rows: 1fr 1fr;
+  align-content: stretch;
 }
 
 #alignContentSpaceBetween {
-    align-content: space-between;
+  align-content: space-between;
 }
 
 #alignContentSpaceAround {
-    align-content: space-around;
+  align-content: space-around;
 }
 
 #alignContentSpaceEvenly {
-    align-content: space-evenly;
+  align-content: space-evenly;
 }
 
 #justifyContentStart {
-    justify-content: start;
+  justify-content: start;
 }
 
 #justifyContentEnd {
-    justify-content: end;
+  justify-content: end;
 }
 
 #justifyContentCenter {
-    justify-content: center;
+  justify-content: center;
 }
 
 #justifyContentStretch {
-    grid-template-columns: 1fr 1fr;
-    justify-content: stretch;
+  grid-template-columns: 1fr 1fr;
+  justify-content: stretch;
 }
 
 #justifyContentSpaceBetween {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 #justifyContentSpaceAround {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 #justifyContentSpaceEvenly {
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 #placeContent {
-    place-content: start end;
+  place-content: start end;
 }
 
 #alignItemsStart {
-    align-items: start;
+  align-items: start;
 }
 
 #alignItemsEnd {
-    align-items: end;
+  align-items: end;
 }
 
 #alignItemsCenter {
-    align-items: center;
+  align-items: center;
 }
 
 #alignItemsStretch {
-    align-items: stretch;
+  align-items: stretch;
 }
 
 #justifyItemsStart {
-    justify-items: start;
+  justify-items: start;
 }
 
 #justifyItemsEnd {
-    justify-items: end;
+  justify-items: end;
 }
 
 #justifyItemsCenter {
-    justify-items: center;
+  justify-items: center;
 }
 
 #justifyItemsStretch {
-    justify-items: stretch;
+  justify-items: stretch;
 }
 
 #placeItems {
-    place-items: start end;
+  place-items: start end;
 }
 
 #gridAutoRows {
-    grid-auto-rows: 75px;
+  grid-auto-rows: 75px;
 }
 
 #gridAutoColumns {
-    grid-auto-flow: column;
-    grid-auto-columns: 150px;
+  grid-auto-flow: column;
+  grid-auto-columns: 150px;
 }
 
 #gridAutoFlowRow {
-    grid-auto-flow: column;
+  grid-auto-flow: column;
 }
 
 #gridAutoFlowRow {
-    grid-auto-flow: row;
+  grid-auto-flow: row;
 }
 
 #gridAutoFlowColumn {
-    grid-auto-flow: column;
+  grid-auto-flow: column;
 }
 
 #gridRowStart {
-    grid-row-start: 2;
+  grid-row-start: 2;
 }
 
 #gridRowStartNamedLines {
-    grid-row-start: row-2-start;
+  grid-row-start: row-2-start;
 }
 
 #gridRowEnd {
-    grid-row-end: 3;
+  grid-row-end: 3;
 }
 
 #gridRowEndNamedLines {
-    grid-row-end: row-2-end;
+  grid-row-end: row-2-end;
 }
 
 #gridRowSpan {
-    grid-row: 1/span 2;
+  grid-row: 1/span 2;
 }
 
 #gridRowNamedLines {
-    grid-row: row-1-start/row-2-end;
+  grid-row: row-1-start/row-2-end;
 }
 
 #gridRow {
-    grid-row: 1/3;
+  grid-row: 1/3;
 }
 
 #gridColumnStart {
-    grid-column-start: 2;
+  grid-column-start: 2;
 }
 
 #gridColumnStartNamedLines {
-    grid-column-start: col-2-start;
+  grid-column-start: col-2-start;
 }
 
 #gridColumnEnd {
-    grid-column-end: 3;
+  grid-column-end: 3;
 }
 
 #gridColumnEndNamedLines {
-    grid-column-end: col-2-end;
+  grid-column-end: col-2-end;
 }
 
 #gridColumnSpan {
-    grid-column: 1/span 2;
+  grid-column: 1/span 2;
 }
 
 #gridColumnNamedLines {
-    grid-column: col-1-start/col-2-end;
+  grid-column: col-1-start/col-2-end;
 }
 
 #gridColumn {
-    grid-column: 1/3;
+  grid-column: 1/3;
 }
 
 #gridArea {
-    grid-area: 1/1/3/3;
+  grid-area: 1/1/3/3;
 }
 
 #overlayItem1 {
-    grid-column: 1/3;
-    grid-row: 1/1;
+  grid-column: 1/3;
+  grid-row: 1/1;
 }
 
 #overlayItem2 {
-    grid-column: 2/3;
-    grid-row: 1/3;
+  grid-column: 2/3;
+  grid-row: 1/3;
 }
 
 #alignSelfStart {
-    align-self: start;
+  align-self: start;
 }
 
 #alignSelfEnd {
-    align-self: end;
+  align-self: end;
 }
 
 #alignSelfCenter {
-    align-self: center;
+  align-self: center;
 }
 
 #alignSelfStretch {
-    align-self: stretch;
+  align-self: stretch;
 }
 
 #justifySelfStart {
-    justify-self: start;
+  justify-self: start;
 }
 
 #justifySelfEnd {
-    justify-self: end;
+  justify-self: end;
 }
 
 #justifySelfCenter {
-    justify-self: center;
+  justify-self: center;
 }
 
 #justifySelfStretch {
-    justify-self: stretch;
+  justify-self: stretch;
 }
 
 #placeSelf {
-    place-self: start end;
+  place-self: start end;
 }
 
 /*# sourceMappingURL=index.css.map */
