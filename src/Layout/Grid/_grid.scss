@@ -8,31 +8,48 @@
  *
  * Use to the body or the page container
  * Set the grid-template-areas to create the page layout
+ *
+ * @param   $layout   the type of layout, default value 'main'
  */
-.lyt-base-container {
+@mixin lyt-base-container($layout: main) {
   min-height: 100vh;
   display: grid;
-  grid-template-rows: auto 1fr auto;
   grid-template-areas:  "header"
                         "main"
                         "footer";
+
+  @if $layout == cst {
+    grid-template-rows: 1fr auto;
+  } @else {
+    grid-template-rows: auto 1fr auto;
+  }
 }
 
 /**
  * Layout container
  *
  * Use to the document layout container (header, navbar, main, etc.)
+ *
+  * @param   $layout   the type of layout, default value 'main'
  */
-@mixin lyt-container {
+@mixin lyt-container($layout: main) {
   display: grid;
   grid-template-columns:
           [container-start content-start] $lyt-content-width-base [content-end container-end];
 
-  @media (min-width: map-get($breakpoints, md)) {
-    grid-template-columns:
-            [container-start pad-1-start] $lyt-pad-width-base
-            [pad-1-end content-start] minmax($lyt-content-min-width-md, $lyt-content-max-width-md)
-            [content-end pad-2-start] $lyt-pad-width-base [pad-2-end container-end];
+  @if $layout == cst {
+    @media (min-width: map-get($breakpoints, xl)) {
+      grid-template-columns:
+            [container-start pad-1-start] $lyt-cst-pad-width-base
+            [pad-1-end content-start] $lyt-cst-content-width [content-end container-end];
+    }
+  } @else {
+    @media (min-width: map-get($breakpoints, md)) {
+      grid-template-columns:
+            [container-start pad-1-start] $lyt-main-pad-width-base
+            [pad-1-end content-start] minmax($lyt-main-content-min-width-md, $lyt-main-content-max-width-md)
+            [content-end pad-2-start] $lyt-main-pad-width-base [pad-2-end container-end];
+    }
   }
 }
 
