@@ -8,7 +8,7 @@
   width: 2.75rem;
   height: 2.75rem;
 
-  @media (min-width: map-get($breakpoints, md)) {
+  @media (min-width: map-get($breakpoints, xl)) {
     display: none;
   }
 }
