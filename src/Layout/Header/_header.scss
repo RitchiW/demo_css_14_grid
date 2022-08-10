@@ -4,9 +4,9 @@
 @use '../Grid/grid' as *;
 
 .header {
-  @include lyt-container;
+  @include lyt-container($layout: cst);
+  height: 5rem;
   grid-area: header;
-  background: map-get($bg-clrs, info);
 }
 
 .header__content-container {
@@ -15,14 +15,6 @@
 
 .header__content-wrapper {
   @include lyt-content-wrapper;
-  @include align-content($align: center, $justify: space-between);
-}
-
-.header__title {
-  color: map-get($text-clrs, white);
-
-  @media (min-width: map-get($breakpoints, md)) {
-    @include set-font-size(5rem);
-  }
+  @include align-content($align: center, $justify: flex-start);
 }
 
