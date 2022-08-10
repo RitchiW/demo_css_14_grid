@@ -22,31 +22,27 @@ $grays: (
 
 // Text color scheme
 $text-clrs: (
-        primary : #c8eff9,
-        secondary : #022449,
-        info : #55bdca,
-        highlight : #f27d42,
+        primary : #2C7CF5,
+        secondary : #0F4CA8,
+        info : #CFE2FF,
+        highlight : #FFA717,
         muted : map-get($grays, 700),
         success : #7AFC46,
         warning : #fcee46,
         danger : #fc6b46,
         black : map-get($grays, black),
         white : map-get($grays, white),
-        light : map-get($grays, white), // change
-        dark : map-get($grays, black) // change
 );
 
 // Background color scheme
 $bg-clrs: (
-        primary : #96ffff,
-        secondary : #022449,
-        info : #55bdca,
-        highlight : #f27d42,
+        primary : #2C7CF5,
+        secondary : #0F4CA8,
+        info : #CFE2FF,
+        highlight : #FFA717,
         muted : map-get($grays, 500),
         success : #7AFC46,
         warning : #fcee46,
         danger : #fc6b46,
         white : map-get($grays, white),
-        light : map-get($grays, 200), // change
-        dark : map-get($grays, 800) // change
 );
