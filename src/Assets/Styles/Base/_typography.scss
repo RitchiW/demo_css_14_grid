@@ -1,5 +1,6 @@
 @use '../Abstracts/variables' as *;
 @use '../Abstracts/mixins' as *;
+@use 'colors' as *;
 
 /* Document
    ========================================================================== */
@@ -7,6 +8,7 @@
 * {
   @include set-font-size;
   font-family: $font-family-base;
+  color: map-get($text-clrs, black);
 }
 
 /* Headings
